@@ -51,7 +51,9 @@ const Footer = () => {
               Blog
             </Link>
           </div>
-          <MainButton name='Get Started' />
+          <MainButton 
+            to='/getstarted'
+            name='Get Started' />
         </div>
         <div className='text-[#8a8a8a] flex flex-col gap-5 text-xl'>
           <p>Subscribe to Our Newsletter</p>

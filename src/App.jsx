@@ -27,13 +27,14 @@ const TransitionWrapper = () => {
 
   useEffect(() => {
     setIsTransitioning(true)
-    const timer = setTimeout(() => setIsTransitioning(false), 700)
+    window.scrollTo(0, 0) 
+    const timer = setTimeout(() => setIsTransitioning(false), 1000) 
     return () => clearTimeout(timer)
   }, [location.pathname])
 
   return (
     <div
-      className={`transition-opacity duration-700 ${
+      className={`transition-opacity duration-1000 ${
         isTransitioning ? 'opacity-0' : 'opacity-100'
       }`}
     >
